@@ -1,0 +1,3 @@
+Crosswire now detects more app and installer failures and records diagnostic logs.
+Installed programs remain in your library after restarting Crosswire.
+This update also fixes Play actions and a startup dialog that could stop responding.

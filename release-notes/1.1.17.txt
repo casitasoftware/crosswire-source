@@ -1,0 +1,5 @@
+Crosswire checks for updates when it opens, if automatic checks are enabled.
+Choose to update and restart now, or install when you quit.
+Settings opens in a separate window with native controls.
+The first-run guide now appears when support files are already installed.
+The library has a sidebar with full app details and a separate grid view.

@@ -1,0 +1,9 @@
+{
+  "download": "https://download.casitasoftware.com/app/Crosswire.dmg",
+  "source": "https://github.com/casitasoftware/crosswire-source",
+  "help": "https://casitasoftware.com/crosswire/docs/",
+  "publisher": "https://casitasoftware.com/",
+  "compatibility": "https://casitasoftware.com/crosswire/compatibility/",
+  "license": "https://github.com/casitasoftware/crosswire-source/blob/main/LICENSE",
+  "support": "mailto:contact@casitasoftware.com"
+}
