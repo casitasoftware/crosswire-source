@@ -1,0 +1,85 @@
+name: Bug Report
+description: Report a bug.
+type: "Bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing: many failures come from the underlying compatibility
+        layer rather than from Crosswire itself. If the same app also fails in
+        other Windows-compatibility tools on macOS, report it upstream at
+        [WineHQ](https://bugs.winehq.org) instead.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please provide a description of the bug.
+    validations:
+      required: true
+  - type: input
+    id: crosswire-version
+    attributes:
+      label: What version of Crosswire are you using?
+      description: Shown in Crosswire under About Crosswire.
+      placeholder: "1.1.15"
+    validations:
+      required: true
+  - type: dropdown
+    id: mac-version
+    attributes:
+      label: What version of macOS are you using?
+      description: Shown under the Apple menu, About This Mac.
+      options:
+        - "Tahoe (macOS 26)"
+        - "Sequoia (macOS 15)"
+        - "Sonoma (macOS 14)"
+    validations:
+      required: true
+  - type: dropdown
+    id: mac-hardware
+    attributes:
+      label: Mac hardware
+      options:
+        - "Apple silicon (M-series)"
+        - "Intel"
+    validations:
+      required: true
+  - type: input
+    id: app-affected
+    attributes:
+      label: Which Windows application or game is affected?
+      description: Include where you got it, for example Steam, GOG, or a direct download.
+      placeholder: "Example Game (Steam)"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Please provide detailed step-by-step instructions on how to reproduce this issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected behaviour
+      description: Please provide a clear and detailed description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: >
+        Logs from the launched app's process. Press CMD + L in Crosswire. If the
+        failure happens before anything launches, say so here instead.
+      render: bash
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Issue language
+      description: Issues must be written in plain English so that they can be read and acted on.
+      options:
+        - label: My issue is written in English
+          required: true
